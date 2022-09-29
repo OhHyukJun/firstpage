@@ -4,4 +4,4 @@
 ### 진행한 이유
 + html, css, javascript를 1개월 간 공부한 결과물을 만들고자 진행
 ### 결과물
-![site result](https://user-images.githubusercontent.com/90260242/193025782-5218cb11-b25c-4499-94c9-caa9c6882584.png)
+![site result](https://user-images.githubusercontent.com/90260242/193026228-ba2f6c8c-6407-4815-9a84-b555b619cffc.png)
