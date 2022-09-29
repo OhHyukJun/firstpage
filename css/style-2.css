@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul{
+    list-style: none;
+}
+#container{
+    width:1200px;
+    margin: 0 auto;
+}
+a {
+    text-decoration: none;
+    text-align: center;
+}
+header {
+    width:100%;
+    height:60px;
+    background-color: rgb(40, 38, 38);
+}
+
+#logo{
+    float: left;
+    width: 250px;
+    height: 60px;
+    line-height: 50px;
+    padding-left: 10px;
+    /*background-color: rgb(85, 84, 84);*/
+}
+#logo h1 {
+    height:40px;
+    font-weight: 700;
+    font-size: 30px;
+    color: rgb(118, 163, 187);
+    text-shadow: 0 -1px 0 rgb(52, 50, 50);
+}
+nav {
+    float: right;
+    width: 900px;
+    height: 60px;
+}
+#topmenu{
+    height:40px;
+}
+#topmenu > li{
+    float:left;
+    position: relative;
+    /*서브메뉴에서 absolute값을 사용하기 위함*/
+}
+#topmenu > li > a{
+    display: block;
+    color:rgb(204, 196, 196);
+    font-weight: 600;
+    text-shadow: 0 1px rgb(85, 84, 84);
+    padding: 20px 60px;
+    text-align: center;
+}
+#topmenu > li > a > span{
+    font-size: 0.5em;
+}
+#topmenu > li > a:hover{
+    color: rgb(118, 163, 187);
+    text-shadow: 0 -1px rgb(107, 105, 105);
+}
+#topmenu > li > ul {
+    display: none;
+    left: 20px;
+    position: absolute; /*서브메뉴 포지셔닝*/
+    width: 160px;
+    background-color: rgb(50, 51, 54);
+   
+    margin:0;
+}
+#topmenu > li > ul > li {
+    font-size: 14px;
+    text-align: center;
+    padding: 10px;
+    color: rgb(118, 163, 187);
+}
+#topmenu > li:hover > ul {
+    display: block;
+    z-index: 10; /*슬라이드 쇼에 걸리지 않게 지정*/
+}
+
+#topmenu > li > ul > li > a{
+    color:#eee;
+    font-size: 10px;
+    padding: 10px;
+}   
+#topmenu > li > ul > li > a:hover{
+    color: rgb(118, 163, 187);
+}
+/*이미지 슬라이드 쇼*/
+#slideShow {   
+    clear:both;   /* 플로팅 해제 */
+    width:100%;    /* 너비 */ 
+    height:360px;   /* 높이 */ 
+    overflow:hidden;   /* 영역 넘치면 감춤 */ 
+    position: relative;
+  }
+  #slides {
+    position: absolute;
+  }
+  #slides > img {
+    width:100%;  /* 너비 */
+    float:left;  /* 가로로 배치 */
+  }
+
+#contents {
+    width:100%;
+    height:300px;
+}
+
+#tabmenu {
+    float: left;
+    width: 600px;
+    height: 100%;
+    background-color: rgb(142, 142, 142);
+}
+#links{
+    float:right;
+    width: 600px;
+    height: 100%;
+    background-color: rgb(156, 151, 151);
+}
+footer{
+    width: 100%;
+    height: 100px;
+    background-color: gray;
+}

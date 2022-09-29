@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First Page</title>
+    <link rel="stylesheet" href="css/style-1.css">
+</head>
+<body>
+    
+    <!-- 레이아웃 나누기-->
+<div id="container">
+    <header> 
+    <div id="logo">
+        <a href="index.html">
+            <h1>Introduce Me</h1>
+        </a>
+    </div> <!--로고 -->
+    <nav>
+        <ul id="topmenu">
+        <li><a href="#">인적사항<span>▼</span></a>
+            <ul>
+                <li><a href="#">제주 태생</a></li>
+                <li><a href="#">99년생 남자</a></li>
+                <li><a href="#">개발자를 목표로 공부중</a></li>
+            </ul>
+        </li>
+        <li><a href="#">&nbsp;&nbsp;학교<span>▼</span></a>
+            <ul>
+                <li><a href="#">가톨릭대학교</a></li>
+                <li><a href="#">복수전공생</a></li>
+                <li><a href="#">정보통신전자공학부</a></li>
+                <li><a href="#">미디어기술콘텐츠학부</a></li>
+            </ul>
+        </li>
+        <li><a href="#"> &nbsp;가치관 <span>▼</span></a>
+            <ul>
+                <li><a href="#">하루를 낭비하지 않기</a></li>
+                <li><a href="#">내 주변에선 제일 잘하기</a></li>
+                <li><a href="#">적을 만들지 않기</a></li>
+            </ul>
+        </li>
+        <li><a href="#">취미<span>▼</span></a>
+            <ul>
+                <li><a href="#">헬스와 축구시청</a></li>
+                <li><a href="#">예쁜 카페투어</a></li>
+                <li><a href="#">사람과의 수다</a></li>
+            </ul>
+        </li>
+        </ul>
+
+    </nav> <!-- 네비게이션(메뉴)-->
+    </header>
+    <div id="contents">
+        <div id="tabmenu">
+            <input type="radio" id="tab1" name="tabs" checked>
+            <label for="tab1">학습 목록</label>
+            <input type="radio" id="tab2" name="tabs">
+            <label for="tab2">위시리스트</label>
+
+            <div id="study" class="tabContent">
+                <h2>학습 목록입니다</h2>
+                <ul>
+                    <li>Javascript</li>
+                    <li>React, Node.js</li>
+                    <li>Opic, 정보처리기사</li>
+                    <li>BackJun language</li>
+                    <li>Programmers Algorism</li>
+                </ul>
+            </div>
+            <div id="wishlist" class="tabContent">
+                <h2>위시리스트 내용입니다.</h2>
+                <ul>
+                    <li>해외여행 가보기</li>
+                    <li>만족스러운 직장 갖기</li>
+                    <li>프리미어리그 직관하기</li>
+                    <li>원할 때마다 옷사기</li>
+                    <li>부모님 용돈 드리기</li>
+                </ul>
+            </div>
+        </div>
+        <div id="links">
+            <ul>
+                <li>
+                    <a href="http://www.acmicpc.net" target="right">
+                        <span id = "quick-icon1"></span>
+                        <p>BackJun</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="http://www.programmers.co.kr" target="_blank">
+                        <span id = "quick-icon2"></span>
+                        <p>Programmers</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com/c/opicnojam" target="right">
+                        <span id = "quick-icon3"></span>
+                        <p>Opic</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    
+    <div id="slideShow">
+        <div id="slides">
+          <img src="images/photo-4.jpg" alt="">
+          <img src="images/photo-5.jpg" alt="">
+          <img src="images/photo-6.jpg" alt="">
+          <button id="prev">&lang;</button>
+          <button id="next">&rang;</button>
+        </div>
+      </div>
+    <footer>
+        <div id="bottomMenu">
+            <ul>
+                <li><a href="#">개인 소개</a></li>
+                <li><a href="#">개인정보처리방침</a></li>
+                <li><a href="#">이용약관</a></li>
+                <li><a href="#">footer꾸미기</a></li>
+            </ul>
+        </div>
+        <div id="address">
+            <p>경기도 부천시 **동 10-** (대표번호) 02-2222-2222 (이메일) aaa1234@naver.com</p>
+        </div>
+        <div id="sns">
+        <ul>
+            <li><a href="http://www.facebook.com" target="_blank"><img src="images/sns-1.png"></a></li>
+            <li><a href="http://www.youtube.com" target="_blank"><img src="images/sns-2.png"></a></li>
+            <li><a href="http://www.instagram.com" target="_blank"><img src="images/sns-3.png"></a></li>
+        </ul>
+        </div>
+    </footer>
+</div>
+<script src="js/slideshow.js"></script>
+</body>
+</html>
